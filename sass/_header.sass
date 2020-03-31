@@ -1,0 +1,31 @@
+header
+    display: flex
+    flex-wrap: nowrap
+    background-color: #ffffff
+    height: 60px
+
+    .logo-arteraki
+        margin-left: 2vw
+
+    nav
+        display: flex
+        align-items: center
+        width: 580px
+        justify-content: space-between
+        margin-left: 68px
+
+        a
+            text-decoration: none
+            color: #000000
+        
+        a::after 
+            content: ''
+            display: block
+            width: 0
+            height: 2px
+            background: #000
+            transition: width .3s
+
+        a:hover::after 
+            width: 100%
+            transition: width .3s
