@@ -143,4 +143,62 @@ section .card-hero .info-artista .datos-pintura {
 section .card-hero .info-artista .datos-pintura h2, section .card-hero .info-artista .datos-pintura h5 {
   margin: 0;
 }
+
+section .container-obras {
+  width: 100%;
+  height: 500px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: nowrap;
+      -ms-flex-pack: nowrap;
+          justify-content: nowrap;
+}
+
+section .container-obras .container1-obras {
+  width: 60%;
+  height: 500px;
+  background-color: #227c39;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: nowrap;
+      -ms-flex-pack: nowrap;
+          justify-content: nowrap;
+}
+
+section .container-obras .container1-obras .container1-1-obras {
+  width: 30%;
+  height: 230px;
+  border-radius: 10px 10px 10px 10px;
+  border: 1px solid #e8edee;
+}
+
+section .container-obras .container1-obras .container1-1-obras .container1-1-obras-img img {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+section .container-obras .container1-obras .container1-1-obras .datos-pintura {
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+section .container-obras .container1-obras .container1-1-obras .datos-pintura h4, section .container-obras .container1-obras .container1-1-obras .datos-pintura h5 {
+  margin: 0;
+}
+
+section .container-obras .container2-obras {
+  width: 40%;
+  height: 500px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: nowrap;
+      -ms-flex-pack: nowrap;
+          justify-content: nowrap;
+}
 /*# sourceMappingURL=styles.css.map */
