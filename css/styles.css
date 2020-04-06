@@ -147,17 +147,14 @@ section .card-hero .info-artista .datos-pintura h2, section .card-hero .info-art
 section .container-obras {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20% 20% 20% 20% 20%;
-      grid-template-columns: 20% 20% 20% 20% 20%;
-  -ms-grid-rows: 50% 50%;
-      grid-template-rows: 50% 50%;
-  grid-gap: 8px;
+  -ms-grid-columns: (19%)[5];
+      grid-template-columns: repeat(5, 19%);
+  -ms-grid-rows: 49% 49%;
+      grid-template-rows: 49% 49%;
+  grid-column-gap: 0.7%;
+  grid-row-gap: 1.3%;
   height: 690px;
-  background-color: #7c7272;
-  justify-items: start start start start start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background-color: #ffffff;
 }
 
 section .container-obras .container-obras-contenido {
@@ -166,7 +163,7 @@ section .container-obras .container-obras-contenido {
 }
 
 section .container-obras .container-obras-contenido img {
-  height: auto;
+  height: 80%;
   width: 100%;
   border-radius: 10px 10px 10px 10px;
 }
@@ -180,6 +177,11 @@ section .container-obras .container-obras-contenido:nth-of-type(4) {
   grid-row: 1 / 3;
 }
 
+section .container-obras .container-obras-contenido:nth-of-type(4) img {
+  height: 90%;
+  width: 100%;
+}
+
 section .container-obras .container-obras-contenido:nth-of-type(5) {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -187,32 +189,30 @@ section .container-obras .container-obras-contenido:nth-of-type(5) {
 }
 
 section .container-obras .datos-pintura {
-  margin-left: 10px;
   margin-top: 3px;
-  pading: 10px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
 }
 
-section .container-obras .datos-pintura h2, section .container-obras .datos-pintura h5 {
+section .container-obras .datos-pintura h3, section .container-obras .datos-pintura h4 {
   margin: 0;
+}
+
+section .container-obras .datos-pintura h4 {
+  color: #9c9797;
 }
 
 section .container-colecciones {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20% 20% 20% 20% 20%;
-      grid-template-columns: 20% 20% 20% 20% 20%;
-  -ms-grid-rows: 50% 50%;
-      grid-template-rows: 50% 50%;
-  grid-gap: 8px;
+  -ms-grid-columns: (19%)[5];
+      grid-template-columns: repeat(5, 19%);
+  -ms-grid-rows: 49% 49%;
+      grid-template-rows: 49% 49%;
+  grid-column-gap: 1.1%;
+  grid-row-gap: 1.4%;
+  padding-left: 0.7%;
   height: 690px;
-  background-color: #7c7272;
-  justify-items: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background-color: #ffffff;
 }
 
 section .container-colecciones .container-colecciones-contenido {
@@ -221,9 +221,17 @@ section .container-colecciones .container-colecciones-contenido {
 }
 
 section .container-colecciones .container-colecciones-contenido img {
-  height: auto;
+  height: 80%;
   width: 100%;
   border-radius: 10px 10px 10px 10px;
+}
+
+section .container-colecciones .container-colecciones-contenido h3, section .container-colecciones .container-colecciones-contenido h4 {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 section .container-colecciones .container-colecciones-contenido:nth-of-type(2) {
@@ -235,39 +243,42 @@ section .container-colecciones .container-colecciones-contenido:nth-of-type(2) {
   grid-row: 1 / 3;
 }
 
+section .container-colecciones .container-colecciones-contenido:nth-of-type(2) img {
+  height: 90%;
+  width: 100%;
+}
+
 section .container-colecciones .container-colecciones-contenido:nth-of-type(6) {
   -ms-grid-column: 4;
   -ms-grid-column-span: 2;
   grid-column: 4 / 6;
 }
 
-section .container-colecciones .container-colecciones-contenido:nth-of-type(6) .datos-pintura {
-  margin-left: 10px;
+section .container-colecciones .datos-pintura {
   margin-top: 3px;
-  pading: 10px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
 }
 
-section .container-colecciones .container-colecciones-contenido:nth-of-type(6) .datos-pintura h2, section .container-colecciones .container-colecciones-contenido:nth-of-type(6) .datos-pintura h5 {
+section .container-colecciones .datos-pintura h3, section .container-colecciones .datos-pintura h4 {
   margin: 0;
+}
+
+section .container-colecciones .datos-pintura h4 {
+  color: #9c9797;
 }
 
 section .container-artistas {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (20%)[5];
-      grid-template-columns: repeat(5, 20%);
+  -ms-grid-columns: (19%)[5];
+      grid-template-columns: repeat(5, 19%);
   -ms-grid-rows: 49% 49%;
       grid-template-rows: 49% 49%;
-  grid-gap: 8px;
+  grid-column-gap: 1.1%;
+  grid-row-gap: 1.4%;
+  padding-left: 0.7%;
   height: 690px;
-  background-color: #7c7272;
-  justify-items: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background-color: #ffffff;
 }
 
 section .container-artistas .container-artistas-contenido {
@@ -276,7 +287,7 @@ section .container-artistas .container-artistas-contenido {
 }
 
 section .container-artistas .container-artistas-contenido img {
-  height: auto;
+  height: 80%;
   width: 100%;
   border-radius: 10px 10px 10px 10px;
 }
@@ -290,6 +301,11 @@ section .container-artistas .container-artistas-contenido:nth-of-type(1) {
   grid-row: 1 / 3;
 }
 
+section .container-artistas .container-artistas-contenido:nth-of-type(1) img {
+  height: 90%;
+  width: 100%;
+}
+
 section .container-artistas .container-artistas-contenido:nth-of-type(5) {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
@@ -297,14 +313,15 @@ section .container-artistas .container-artistas-contenido:nth-of-type(5) {
 }
 
 section .container-artistas .datos-pintura {
-  margin-left: 10px;
   margin-top: 3px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
 }
 
-section .container-artistas .datos-pintura h2, section .container-artistas .datos-pintura h5 {
+section .container-artistas .datos-pintura h3, section .container-artistas .datos-pintura h4 {
   margin: 0;
+}
+
+section .container-artistas .datos-pintura h4 {
+  color: #9c9797;
 }
 /*# sourceMappingURL=styles.css.map */
